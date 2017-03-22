@@ -30,11 +30,15 @@ Assumes a **git** based dependent project on **linux**, with **cmake** as the bu
 7. ~~Add **cmake** dependencies to your project.~~   
   Already done in **CMakeLists.txt**
   ```
-  add_subdirectory(lib/kandy)
-  include("${KANDY_SOURCE_DIR}/kandyConfig.cmake")
+  add_subdirectory(lib/kandy)   
+  include("${KANDY_SOURCE_DIR}/kandyConfig.cmake")    
   ```
 
-8. Update **kandy** and other submodules.   
+8. Add **Kandy** authentication data to source files.   
+  Also add personal data, like phone numbers.
+
+9. Update **Kandy C++ SMS Library** and other submodules.   
+  Do this to update to the latest commits.      
   `git submodule update --recursive --remote`
 
 &nbsp;
