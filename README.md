@@ -14,14 +14,20 @@ Assumes a **git** based dependent project on **linux**, with **cmake** as the bu
 2. Install **cmake**  
   `sudo apt install cmake`
 
-3. Install **kandy** library as a submodule.  
+3. Clone **Kandy C++ SMS Library Examples**   
+  `git clone https://github.com/aharshac/KandyCppLibExamples.git`
+
+4. Change directory to *KandyCppLibExamples*    
+  `cd KandyCppLibExamples`
+
+5. Install **Kandy C++ SMS Library** as a submodule.  
   This will initialize the submodule at `lib/kandy`.   
   `git submodule add <url>`
 
-4. Download **kandy** library files.  
+6. Download **kandy** library files.  
   `git submodule update --init --recursive`
 
-5. ~~Add **cmake** dependencies to your project.~~   
+7. ~~Add **cmake** dependencies to your project.~~   
   Already done in **CMakeLists.txt**
   ```
   add_subdirectory(lib/kandy)
