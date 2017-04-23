@@ -14,13 +14,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
 
 #	set library directories
 add_subdirectory(lib/kandy)
-include("${KANDY_SOURCE_DIR}/kandyConfig.cmake")
+kandy_include_dependencies()
 
 
 add_executable(sms_test src/sms_test.cpp)
 target_link_libraries(sms_test kandy)
-
-#MESSAGE(STATUS ${KANDY_SOURCE_DIR})
 
 
 
