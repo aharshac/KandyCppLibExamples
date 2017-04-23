@@ -31,7 +31,7 @@ Assumes a **git** based dependent project on **linux**, with **cmake** as the bu
   Already done in **CMakeLists.txt**
   ```
   add_subdirectory(lib/kandy)   
-  include("${KANDY_SOURCE_DIR}/kandyConfig.cmake")    
+  kandy_include_dependencies()    
   ```
 
 8. Add **Kandy** authentication data to source files.   
