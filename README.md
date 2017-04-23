@@ -27,8 +27,8 @@ Assumes a **git** based dependent project on **linux**, with **cmake** as the bu
 6. Download **kandy** library files.  
   `git submodule update --init --recursive`
 
-7. ~~Add **cmake** dependencies to your project.~~   
-  Already done in **CMakeLists.txt**
+7. Add **cmake** dependencies to your project.   
+  **Note:** This is done already in this project's **CMakeLists.txt**.
   ```
   add_subdirectory(lib/kandy)   
   kandy_include_dependencies()    
