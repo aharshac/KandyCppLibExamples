@@ -22,7 +22,7 @@ Assumes a **git** based dependent project on **linux**, with **cmake** as the bu
 
 5. Install **Kandy C++ SMS Library** as a submodule.  
   This will initialize the submodule at `lib/kandy`.   
-  `git submodule add <url>`
+  `git submodule add https://github.com/aharshac/KandyCpp.git`
 
 6. Download **kandy** library files.  
   `git submodule update --init --recursive`
