@@ -8,7 +8,7 @@ using namespace kandy;
 /* Kandy authentication data */
 string domain_api_key = "";
 string domain_api_secret = "";
-string user_id = "";
+string user_id = "";	// Kandy username (not full email address), i.e., "user1" and not "user1@temp.kandy.io"
 
 /* SMS data */
 string source = "";		// SMS sender, phone number in international format, i.e., +12345678
